@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper Game</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-container">
+                <img src="logo.png" alt="Minesweeper Logo" class="logo">
+                <h1>Minesweeper</h1>
+            </div>
+            <div class="controls">
+                <select id="difficulty" class="difficulty-select">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <button id="restart" class="restart-btn">Restart</button>
+            </div>
+        </div>
+        
+        <div class="game-info">
+            <div class="info-item">
+                <span class="label">Bombs:</span>
+                <span id="bomb-count">0</span>
+            </div>
+            <div class="info-item">
+                <span class="label">Flags:</span>
+                <span id="flag-count">0</span>
+            </div>
+            <div class="info-item">
+                <span class="label">Time:</span>
+                <span id="timer">0</span>
+            </div>
+        </div>
+        
+        <div id="message" class="message hidden"></div>
+        
+        <div id="game-board" class="game-board"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
